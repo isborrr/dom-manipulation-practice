@@ -1,0 +1,384 @@
+body{
+    /* background-color:rgb(250, 250, 249); */
+    /* background-color: #42b883; ; */
+
+    background: #8ca5bf;
+    margin: auto;
+}
+.navBar{
+    position: fixed; /* Fixed position */
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;  /* This centers the div horizontally */
+    /* margin-top: 2rem; */
+    background-color:  rgb(38, 38, 37);/*rgb(154, 124, 101);*/
+    color: white;
+    align-items: center; /* Centers vertically */
+
+
+
+
+}
+.rightDivContain{
+    display: flex;
+    /* gap: 20px; */
+}
+.option,.logo{
+    position: relative;
+    display: flex;
+    background-color:green;
+    margin: 1.5rem;
+    /* width:fit-content; */
+    width: 100px;
+    padding: 8px;/*Top and buttom of the rigth Green divs (home, about,sign in)   */
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+.option:hover{
+    transition: background-color 0.6s ease, box-shadow 0.6s ease;
+    background-color:green;
+    box-shadow: 0 0 15px 5px green; /* Strong green border shadow */
+    border: 2px solid rgb(126, 242, 145);
+    cursor: pointer;
+}
+
+.option:active,.logo:active,.next_arrow:hover, .previous_arrow:hover{
+    background-color:rgb(80, 238, 80);
+    border: 2px solid yellow; /* Yellow border when clicked */
+  }
+
+
+
+
+.newCar{
+/* Background image */
+    /* background-image:url('../Images/bridge.jpeg'); */
+ /* Cover the entire area */
+  /* background-size: cover; */
+  /* Center the image */
+  /* background-position: center; */
+width: 100%;
+
+    background-color: #fff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+
+    margin: 50px auto; /* Center the element */
+    text-align: center;
+}
+#newCar{
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+
+
+    /* background-color: white; */
+     /* Background color of the div */
+	/* box-shadow: 0 2px 4px, 0 4px 8px -1px,
+    0 8px 16px -2px, 0 16px 32px -4px,
+    0 32px 64px -8px, 0 64px 128px -16px; */
+
+
+
+
+}
+.searchField{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: auto;
+    /* width: 400px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 10px; */
+}
+/* input */
+.carsDetails{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 20px;
+
+}
+#cars{
+
+}
+#SearchButton{
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    border-radius: 5px;
+
+    width: 150px;
+
+  background-color: #04AA6D;
+  border: 2px solid transparent; /* No border initially */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  cursor: pointer;
+
+  /* Smooth transition */
+  /* transition: background-color 0.3s ease, box-shadow 0.3s ease;  */
+
+
+}
+#SearchButton:hover, #carDSearchButton:hover, .next_arrow:hover, .previous_arrow:hover{
+    transition: background-color 0.6s ease, box-shadow 0.6s ease;
+    background-color:green;
+    box-shadow: 0 0 15px 5px green; /* Strong green border shadow */
+    border: 2px solid rgb(126, 242, 145);
+}
+
+#SearchButton:active, .next_arrow:active, .previous_arrow:active{
+    background-color:rgb(80, 238, 80);
+    border: 2px solid yellow; /* Yellow border when clicked */
+  }
+
+#carImage{
+    width: 50vh;
+    height: 25vh;
+}
+.carDisplay{
+    width: auto;
+    /* max-width: 300px; */
+}
+.carDisplayButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_center{
+    margin-top: 1rem;
+    width: 85%;          /* Define a width */
+    margin: 0 auto;      /* Horizontal centering */
+}
+.main_center_grid{
+    display: grid;
+    grid-template-columns: 4fr 2.5fr 2.3fr;
+    /* width: 80%; */
+    height: auto;
+    gap: 10px;
+
+    justify-content: center;
+
+}
+li{
+
+}
+#carDSearchButton{
+
+    padding: 5px;
+    border-radius: 5px;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    width: 150px;
+
+  background-color: #04AA6D;
+  border: 2px solid transparent; /* No border initially */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  cursor: pointer;
+}
+.carDisplayInfo{
+    /* width: auto;
+    margin-left: 10px; */
+    /* background-color: rgb(154, 124, 101); */
+    background: #ff7e67;
+}
+.carDisplay {
+    padding: 20px;
+    /* background-color: #76a9fa; */
+    border: 4px solid rgb(0, 0, 0);
+    /* background-color: rgb(154, 124, 101); */
+    background: #ff7e67;
+    color: black;
+    text-align: center;
+}
+.carDisplayInfo, .price{
+    /* background-color: rgb(154, 124, 101); */
+    background: #ff7e67;
+    padding: 20px;
+    /* background-color: #76a9fa; */
+    border: 4px solid rgb(0, 0, 0);
+    color: black;
+    /* text-align: center; */
+}
+.promotion{
+  margin: 1rem;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+}
+.promotionAlbum{
+    margin-top: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    background-color: aquamarine;
+}
+.promoCar{
+    /* width: 15vh;
+    height: 50px; */
+}
+#promoCarImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 8%;
+}
+
+.previous_arrow {
+    margin-top: 11px;
+    margin-left: 2rem;
+    --t: 45%; /* control the tail part */
+    --h: 40%; /* control the head part */
+
+    aspect-ratio: 3/2;
+    width: 4vw;
+    height: 7vh;
+    background-color:green;;
+    clip-path: polygon(100% calc(50% - var(--t)/2),var(--h) calc(50% - var(--t)/2),var(--h) 0,0 50%,var(--h) 100%,var(--h) calc(50% + var(--t)/2),100% calc(50% + var(--t)/2));
+  }
+
+  .next_arrow {
+    margin-top: 11px;
+    margin-right: 2rem;
+    --t: 45%; /* control the tail part */
+    --h: 40%; /* control the head part */
+
+    aspect-ratio: 3/2;
+    width: 4vw;
+    height: 7vh;
+    background-color:green;;
+    clip-path: polygon(0 calc(50% - var(--t)/2),calc(100% - var(--h)) calc(50% - var(--t)/2),calc(100% - var(--h)) 0,100% 50%,calc(100% - var(--h)) 100%,calc(100% - var(--h)) calc(50% + var(--t)/2),0 calc(50% + var(--t)/2));
+  }
+
+/*
+.flex1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+} */
+
+/* .logo{
+    width: 200px;
+    height: 400px;
+    background-color: aqua;
+} */
+
+input {
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    width: 160px;
+    border:#0563af;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    /* -webkit-appearance: button; */
+    /* appearance: button; */
+    outline: none;
+
+    padding: 12px 20px;
+
+
+  display: inline-block;
+  /* border: 2.5px solid #0000ff; */
+  border-radius: 4px;
+  box-sizing: border-box;
+
+ }
+ input:focus , select:focus{
+    border-color: blue; /* Border color when the input is focused */
+    border: 2.5px solid #0000ff;
+}
+
+.box select {
+  /* background-color: #0563af; */
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  width: 160px;
+  /* border: 2.5px solid #0000ff; */
+  border-radius: 4px;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+
+}
+.main_bottom{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    margin: auto;
+}
+#facbookIcon,#instagramIcon, #youtubeIcon{
+    width: 3rem;
+    height: 3.4rem;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 15%;
+    padding: 0.2rem;
+
+}
+.socialMedia{
+    margin-top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 12px;
+}
+
+#facbookIcon:hover,#instagramIcon:hover, #youtubeIcon:hover {
+    border-color: #0000ff;
+    border-width: 2px;
+  }
+
+/* .box::before {
+
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+} */
